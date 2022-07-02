@@ -1,0 +1,585 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.hamburger{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.line{
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.ul-header{
+    margin-top: 16px;
+    display: flex;
+}
+
+.li-header{
+    padding: 0 20px;
+    list-style: none;
+}
+
+.a-header{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+.a-header:hover{
+    color:rgb(0, 0, 0);
+}
+
+.dark-light{
+    padding: 10px 0;
+    font-size: 30px;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* HOME */
+
+.home{
+    padding-top: 200px;
+    padding-bottom: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.inline{
+    display: flex;
+    padding-top: 50px;
+}
+
+.inline-two{
+    display: flex;
+    padding-top: 50px;
+    gap: 10px;
+}
+
+.button-mail{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 25px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.button-explore-more{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.button-mail:hover,
+.button-explore-more:hover{
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.github,
+.twitter,
+.linkedin{
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    border: 2px solid black;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+.github:hover,
+.twitter:hover,
+.linkedin:hover{
+    color: rgb(0, 0, 0);
+}
+
+.hello-title,
+.name-title,
+.my-info{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    padding: 10px 0;
+    letter-spacing: 3px;
+}
+
+/* ABOUT */
+
+.about{
+    padding-top: 70px;
+    padding-bottom: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.overlay-about{
+    padding: 10px 0;
+}
+
+.inline-three{
+    padding-top: 10px;
+    gap: 10px;
+    display: flex;
+    text-align: center;
+}
+
+.inline-four{
+    display: flex;
+    padding: 0 20px;
+    padding-top: 50px;
+}
+
+.inline-five{
+    display: flex;
+}
+
+.profile-image{
+    margin-right: 30px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.more-info-about{
+    font-family: 'Comfortaa', cursive;
+    font-size: 17px;
+    max-width: 500px;
+    padding-bottom: 20px;
+}
+
+.overlay-inline{
+    padding-right: 100px;
+}
+
+.about-one,
+.about-two,
+.about-three{
+    font-family: 'Comfortaa', cursive;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+span{
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button-mail-two{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.button-mail-two:hover{
+    color: rgb(255, 255, 255);
+}
+
+.title-about,
+.title-skills{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+}
+
+.title-skills{
+    padding-top: 50px;
+}
+
+.about-me-info{
+    font-family: 'Comfortaa', cursive;
+    max-width: 600px;
+    font-size: 17px;
+    padding: 0 10px;
+}
+
+.skill-one,
+.skill-two,
+.skill-three,
+.skill-four{
+    background-color: transparent;
+    font-weight: 600;
+    font-style: italic;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 380px;
+    cursor: default;
+    text-align: center;
+}
+
+.skill-one:focus,
+.skill-two:focus,
+.skill-three:focus,
+.skill-four:focus{
+    outline: none;
+}
+
+/* SERVICE */
+
+.services{
+    padding-top: 70px;
+    padding-bottom: 50px;
+    display: grid;
+    place-items: center;
+}
+
+.services-title{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+}
+
+.services-info{
+    padding: 0 10px;
+    font-family: 'Comfortaa', cursive;
+    max-width: 700px;
+    font-size: 17px;
+}
+
+.inline-six{
+    padding: 0 20px;
+    padding-top: 30px;
+    gap: 30px;
+    display: flex;
+}
+
+.overlay-one,
+.overlay-two,
+.overlay-three{
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.icon{
+    text-align: center;
+    font-size: 35px;
+}
+
+.title-one,
+.title-two,
+.title-three{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 25px;
+}
+
+.services-better-info{
+    font-family: 'Comfortaa', cursive;
+    max-width: 400px;
+    font-size: 17px;
+}
+
+.github-link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.github-link:hover{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+    padding-top: 70px;
+    padding-bottom: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.portfolio-title{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+}
+
+.portfolio-info{
+    font-family: 'Comfortaa', cursive;
+    max-width: 700px;
+    font-size: 17px;
+    padding: 0 10px;
+}
+
+.inline-portfolio{
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.front{
+    font-family: 'Federant', cursive;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+}
+
+.back{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.title-project{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 30px;
+}
+
+.info-project{
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+}
+
+.inline-buttons{
+    display: flex;
+    gap: 5px;
+}
+
+.button-live,
+.button-code{
+    display: grid;
+    place-items: center;
+    font-family: 'Racing Sans One', cursive;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.button-live:hover,
+.button-code:hover{
+    color: rgb(0, 0, 0);
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    padding: 10px 0;
+}
+
+.copy{
+    font-family: 'Comfortaa', cursive;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+@media (max-width: 1030px) {
+    .inline-six{
+        display: block;
+    }
+
+    .overlay-two,
+    .overlay-three{
+        margin-top: 20px;
+    }
+
+    .inline-three{
+        display: block;
+    }
+
+    .skill-two,
+    .skill-four{
+        margin-top: 10px;
+    }
+
+    .inline-four{
+        padding-top: 10px;
+        display: grid;
+        place-items: center;
+    }
+
+    .profile-image{
+        margin-bottom: 20px;
+        margin-right: 0;
+        align-items: center;
+    }
+}
+
+@media (max-width: 639px) {
+    .inline-portfolio{
+        display: block;
+        padding-top: 0;
+    }
+
+    .box{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 545px) { 
+
+    .overlay-inline{
+        padding-right: 0;
+    }
+
+    .inline-footer{
+        display: block;
+        text-align: center;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    nav{
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dark-light{
+        padding-left: 10px;
+    }
+
+    .navbar-links{
+        width: 100%;
+        display: none;
+    }
+
+    .ul-header{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .li-header{
+        text-align: center;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .inline-five{
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+
+    .button-mail-two{
+        margin-top: 15px;
+    }
+
+    .a-header{
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .skill-one,
+    .skill-two,
+    .skill-three,
+    .skill-four{
+        width: 280px;
+        font-size: 12px;
+    }
+
+    .copy{
+        font-size: 15px;
+    }
+
+    .profile-image{
+        height: 330px;
+        width: 250px;
+    }
+
+    .hello-title,
+    .name-title,
+    .my-info{
+        font-size: 30px;
+    }
+
+    .button-mail{
+        font-size: 20px;
+    }
+
+    .button-explore-more{
+        font-size: 20px;
+    }
+}
