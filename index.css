@@ -93,6 +93,7 @@ nav{
     text-decoration: none;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
+    transition: 0.4s;
 }
 
 .button-explore-more{
@@ -103,13 +104,13 @@ nav{
     text-decoration: none;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
+    transition: 0.4s;
 }
 
 .button-mail:hover,
 .button-explore-more:hover{
     color: rgb(255, 255, 255);
     border-radius: 20px;
-    transition: 0.3s;
 }
 
 .github,
