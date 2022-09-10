@@ -414,7 +414,7 @@ span{
     gap: 5px;
 }
 
-.button-live,
+/* .button-live, */
 .button-code{
     display: grid;
     place-items: center;
